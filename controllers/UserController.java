@@ -35,7 +35,7 @@ public class UserController {
     @GetMapping("/{userId}")
     public User getOneUser(@PathVariable Long userId) {
         // Belirtilen ID'ye sahip kullanıcıyı getiriyoruz. Eğer kullanıcı bulunamazsa, null döndürülüyor.
-        return userService.getOneUser(userId);
+        return userService.getOneUserById(userId);
     }
 
     @PutMapping("/{userId}")
